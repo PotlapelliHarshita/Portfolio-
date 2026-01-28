@@ -73,5 +73,4 @@ I enjoy building intelligent, data-driven applications and solving real-world pr
 
 ---
 
-## 📂 Project Structure
 
