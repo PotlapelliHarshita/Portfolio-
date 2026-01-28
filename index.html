@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshita | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2 class="logo">Harshita</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1 class="reveal">Hello, I'm <span>Harshita</span></h1>
+            <p class="reveal delay-1">AI & Python Developer | Machine Learning Enthusiast</p>
+            <p class="reveal delay-2">
+                I'm an AI and Python developer with hands-on experience in NLP, Machine Learning,
+                Computer Vision, and building end-to-end applications.
+            </p>
+        </div>
+        <img src="profile.jpg" class="hero-img" alt="Profile" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="reveal">About Me</h2>
+
+        <p class="about-text reveal delay-1">
+            I am a CSE (AI) student specializing in Python development, Machine Learning, 
+            and NLP-based systems. My experience includes developing ML pipelines, SQL 
+            generation from natural language, real-time object detection, and sentiment 
+            analysis applications. I aim to build impactful, scalable AI solutions while 
+            continuously improving my technical and analytical skills.
+        </p>
+
+        <!-- Animated About Cards -->
+        <div class="about-cards">
+            <div class="about-card reveal delay-2">🌐 Languages: English, Telugu</div>
+            <div class="about-card reveal delay-3">🎓 CSE (AI) Student</div>
+            <div class="about-card reveal delay-4">💡 Interests: AI, ML, Computer Vision, Problem Solving</div>
+        </div>
+
+        <!-- Resume Button -->
+        <a href="Potlapalli Harshita_Resume.pdf" download class="resume-btn reveal delay-5">
+            Download Resume
+        </a>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="reveal">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card reveal">Python</div>
+            <div class="skill-card reveal delay-1">MySQL</div>
+            <div class="skill-card reveal delay-2">Machine Learning</div>
+            <div class="skill-card reveal delay-3">NLP</div>
+            <div class="skill-card reveal delay-4">FastAPI</div>
+            <div class="skill-card reveal delay-5">OOPs</div>
+            <div class="skill-card reveal delay-6">Operating Systems</div>
+            <div class="skill-card reveal delay-7">Docker</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="reveal">Projects</h2>
+        <div class="projects">
+
+            <div class="project-card reveal">
+                <h3>Natural Language → SQL System</h3>
+                <p>• Built an end-to-end AI-powered Natural Language to SQL system, enabling users to query relational databases using plain English with 92%+ accuracy.</p>
+                <p>• Automated schema extraction and reduced query handling effort by 40%.</p>
+                <p>• Integrated Groq LLM with FastAPI backend to generate high-quality SQL queries.</p>
+                <p>• Developed a Streamlit interface with charts, voice input, and 1-click exports.</p>
+            </div>
+
+            <div class="project-card reveal delay-1">
+                <h3>Aspect-Based Sentiment Analysis</h3>
+                <p>• Developed an AI-powered sentiment analysis system using NLP & transformer models.</p>
+                <p>• Automated review analysis, reducing manual effort by 70%.</p>
+                <p>• Built secure Flask web interface integrated with FastAPI, MySQL, Docker & JWT.</p>
+            </div>
+
+            <div class="project-card reveal delay-2">
+                <h3>Object Detection (YOLOv5)</h3>
+                <p>• Built real-time YOLOv5 object detection using PyTorch & OpenCV.</p>
+                <p>• Designed efficient bounding box rendering and confidence labeling.</p>
+                <p>• Created full CV pipeline from capture → processing → prediction → visualization.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2 class="reveal">Gallery / Achievements</h2>
+        <div class="gallery">
+            <img src="img1.jpg" onclick="openLightbox(this.src)" class="reveal">
+            <img src="img2.jpg" onclick="openLightbox(this.src)" class="reveal delay-1">
+            <img src="img3.jpg" onclick="openLightbox(this.src)" class="reveal delay-2">
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" />
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="contact-title">Contact Me</h2>
+
+        <p class="contact-email">
+            Email:
+            <a href="mailto:potlapelliharshita@gmail.com">
+                potlapelliharshita@gmail.com
+            </a>
+        </p>
+
+        <div class="contact-buttons">
+            <a href="https://www.linkedin.com/in/potlapalli-harshita-057114290" target="_blank" class="contact-btn">
+                LinkedIn
+            </a>
+            <a href="https://github.com/PotlapelliHarshita" target="_blank" class="contact-btn">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Harshita — Portfolio
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
